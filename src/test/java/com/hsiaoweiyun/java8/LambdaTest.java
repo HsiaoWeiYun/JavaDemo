@@ -41,5 +41,25 @@ public class LambdaTest {
         System.out.println(Arrays.toString(names));
     }
 
+    @Test
+    public void methodReferenceTest(){
+        //一般的lambda
+        Arrays.asList("Victor", "Tom", "Willson").forEach(s->{System.out.println(s);});
+        //method reference
+        Arrays.asList("Victor", "Tom", "Willson").forEach(System.out::println);
+
+        //method reference, 自動推導輸入輸出, 可避免到處寫下lambda
+        String[] names = {"Victor", "Tom", "Willson"};
+        Arrays.sort(names, StringOrder::byLength); //int StringOrder.byLength(String, String)
+        System.out.println(Arrays.toString(names));
+
+        //非static 的用法
+        StringOrder so = new StringOrder();
+        Arrays.sort(names, so::byLexicography);
+        System.out.println(Arrays.toString(names));
+
+
+    }
+
 
 }
