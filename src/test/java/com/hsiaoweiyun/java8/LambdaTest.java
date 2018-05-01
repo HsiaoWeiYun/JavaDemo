@@ -4,6 +4,8 @@ import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.Objects;
+import java.util.function.*;
 
 public class LambdaTest {
 
@@ -59,6 +61,56 @@ public class LambdaTest {
         System.out.println(Arrays.toString(names));
 
 
+    }
+
+    @Test
+    public void consumerInterfaceTest(){
+        //單純消費一個input, 沒有回傳值
+        Consumer<String> consumer = (s)->{System.out.println(s);};
+        consumer.accept("Hello Consumer!!");
+        //直接消費一個int
+        IntConsumer intConsumer = (i)->System.out.println(i);
+        intConsumer.accept(Integer.MAX_VALUE);
+        //直接消費一個long
+        LongConsumer longConsumer = (i)->System.out.println(i);
+        longConsumer.accept(Long.MAX_VALUE);
+        //直接消費一個Double
+        DoubleConsumer doubleConsumer = (d)->System.out.println(d);
+        doubleConsumer.accept(Double.MAX_EXPONENT);
+        //消費兩個參數
+        BiConsumer<Integer, Integer> biConsumer = (i1, i2)->System.out.println(i1*i2);
+        biConsumer.accept(10,10);
+        //消費第一個參數是物件第二參數是int, ObjLongConsumer ObjDoubleConsumer 以此類推
+        ObjIntConsumer<String> objIntConsumer = (s,i)->System.out.println(s+i);
+        objIntConsumer.accept("1+",1);//print 1+1
+    }
+
+    @Test
+    public void functionInterfaceTest(){
+        //一個input, 回傳一個output   行為像是 y=f(x)
+        Function<String, String> function = (s)->{return s.toUpperCase();};
+        System.out.println(function.apply("hello Function!!"));
+        //兩個輸入一個輸出可用BiFunction
+        BiFunction<Integer,Integer,String> biFunction = (i1,i2)->{return "" + i1 + i2;};
+        System.out.println(biFunction.apply(1,2));
+        BinaryOperator<String> binaryOperator = (s1, s2) ->{return s1 + s2;};
+        System.out.println(binaryOperator.apply("Q_","_Q"));
+    }
+
+    @Test
+    public void predicateInterfaceTest(){
+        //一個輸入回傳ture or false
+        Predicate<String> predicate = (s1)->{return s1.endsWith("test");};
+        System.out.println(predicate.test("my test"));
+        //基本對應函式介面為 IntPredicate LongPredicate DoublePredicate
+    }
+
+    @Test
+    public void supplierInterfaceTest(){
+        //不接受引數, 只有回傳值
+        Supplier<String> supplier = ()->{return "test 123";};
+        System.out.println(supplier.get());
+        //對應回傳型態使用: BooleanSupplier DoubleSupplier IntSupplier LongSupplier
     }
 
 
