@@ -3,6 +3,7 @@ package com.hsiaoweiyun.java8;
 import org.junit.Test;
 
 import java.util.*;
+import java.util.concurrent.TimeUnit;
 import java.util.function.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -188,6 +189,23 @@ public class LambdaTest {
                 .sorted((n1,n2) -> n2.compareTo(n1))
                 .collect(Collectors.toList());
         sortedAsc.stream().forEach(System.out::println);
+    }
+
+    @Test
+    public void testParallelStream(){
+        List<Integer> integerList = new ArrayList<>();
+        IntStream.range(0, 10000000).forEach((i)->{integerList.add(Math.abs(new Random().nextInt()));});
+        long start = System.nanoTime();
+        List<Integer> sorted = integerList.stream().sequential().sorted().collect(Collectors.toList());
+        long end = System.nanoTime();
+        long duration = TimeUnit.NANOSECONDS.toMillis(end - start);
+        System.out.println("sequntial duration: " + duration + "(ms)");
+
+        start = System.nanoTime();
+        sorted = integerList.stream().parallel().sorted().collect(Collectors.toList());
+        end = System.nanoTime();
+        duration = TimeUnit.NANOSECONDS.toMillis(end - start);
+        System.out.println("parallel duration: " + duration + "(ms)");
     }
 
 
