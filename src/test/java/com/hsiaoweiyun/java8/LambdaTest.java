@@ -2,10 +2,11 @@ package com.hsiaoweiyun.java8;
 
 import org.junit.Test;
 
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.Objects;
+import java.util.*;
 import java.util.function.*;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 public class LambdaTest {
 
@@ -111,6 +112,82 @@ public class LambdaTest {
         Supplier<String> supplier = ()->{return "test 123";};
         System.out.println(supplier.get());
         //對應回傳型態使用: BooleanSupplier DoubleSupplier IntSupplier LongSupplier
+    }
+
+    @Test
+    public void testStreamRange(){
+        //印出某段範圍的數字
+        IntStream.range(0,10).forEach(System.out::println);
+    }
+
+    @Test
+    public void testStreamCollect(){
+        //將資料收集成指定集合
+        List<String> list = Stream.of("A","B","C", "A").collect(Collectors.toList());
+        list.stream().forEach(System.out::println);
+        //set 資料不重複
+        Set<String> stringSet = Stream.of("A","B","C", "A").collect(Collectors.toSet());
+        stringSet.stream().forEach(System.out::println);
+    }
+
+    @Test
+    public void testCollectorsJoining(){
+        //Collectors.joining(定位符號,前置字元,後置字元)
+        String result = Stream.of("A","B","C", "A").collect(Collectors.joining(",","[","]"));
+        System.out.println(result);
+    }
+
+    @Test
+    public void testStreamMap(){
+        //將輸入轉換成另一種輸出時可以用map
+        List<String> list = Stream.of("A","B","C", "A").map((s)->{return s.toLowerCase();}).collect(Collectors.toList());
+        list.stream().forEach(System.out::println);
+    }
+
+    @Test
+    public void testFilter(){
+        //filter可用來篩選來源
+        List<String> list = Stream.of("A","B","C", "A").filter(s->{return !"A".equalsIgnoreCase(s);}).map((s)->{return s.toLowerCase();}).collect(Collectors.toList());
+        list.stream().forEach(System.out::println);
+    }
+
+    @Test
+    public void testFlatMap(){
+        //flatMap就是將很多來源合併成一個來源
+        List<String> allNames = Stream.of(Arrays.asList("Tony", "Tom", "John"),
+                Arrays.asList("Amy", "Emma", "Iris"))
+                .flatMap(names -> names.stream())
+                .collect(Collectors.toList());
+        System.out.println(allNames.toString());
+    }
+
+    @Test
+    public void testStreamCount(){
+        long amount = Stream.of("A","B","C", "A").count();
+        System.out.println(amount);
+    }
+
+    @Test
+    public void testStreamMaxMin(){
+        int max = Stream.of(20,1,65,12,10,100,3).max(Comparator.comparing(n -> n)).get();
+        System.out.println("max: " + max);
+        int min = Stream.of(20,1,65,12,10,100,3).min(Comparator.comparing(n -> n)).get();
+        System.out.println("min: " + min);
+    }
+
+    @Test
+    public void testStreamSort(){
+        //ASC
+        List<Integer> sortedAsc = Stream.of(120,24,59,63,11,74)
+                .sorted()
+                .collect(Collectors.toList());
+        sortedAsc.stream().forEach(System.out::println);
+
+        //DESC
+        List<Integer> sortedDesc = Stream.of(120,24,59,63,11,74)
+                .sorted((n1,n2) -> n2.compareTo(n1))
+                .collect(Collectors.toList());
+        sortedAsc.stream().forEach(System.out::println);
     }
 
 
