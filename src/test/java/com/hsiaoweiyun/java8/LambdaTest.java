@@ -1,5 +1,6 @@
 package com.hsiaoweiyun.java8;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.*;
@@ -206,6 +207,25 @@ public class LambdaTest {
         end = System.nanoTime();
         duration = TimeUnit.NANOSECONDS.toMillis(end - start);
         System.out.println("parallel duration: " + duration + "(ms)");
+    }
+
+    @Test
+    public void testReduce(){
+        //reduce第一個參數為初始值, 第二參數為關聯性操作, 第一個輸入為初始值第二個輸入為上一個步驟的結果
+        long result = Stream.of(1,2,3,4).reduce(100, (sum, item)->{return sum + item;});
+        Assert.assertEquals(110, result);
+        //沒有初始值
+        result = Stream.of(1,2,3,4).reduce((sum, item)->{return sum + item;}).get();
+        Assert.assertEquals(10, result);
+    }
+
+    @Test
+    public void testCollect(){
+        Stream<Integer> stream = Stream.of(1, 2, 3, 4).filter(p -> p > 2);
+        //第一个参数supplier为提供一个新的容器, 第二个参数BiConsumer的第一个参数是前面生成的容器第二参数是要处理的元素
+        //第三个参数不懂是要干麻
+        List<Integer> resultList = stream.collect(()->new ArrayList<>(), (list, element)->list.add(element),(list1, list2)->{list1.addAll(list2);});
+        resultList.forEach(System.out::println);
     }
 
 
