@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58d9d153-fd44-40a8-8db7-ebb3534e8c47" name="Default" comment="add normal hash and consistency hash sample">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hsiaoweiyun/currency/waitnotify/DateComsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hsiaoweiyun/currency/waitnotify/DateProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hsiaoweiyun/currency/waitnotify/Storage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hsiaoweiyun/currency/condition/DateComsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hsiaoweiyun/currency/condition/DateProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hsiaoweiyun/currency/condition/Storage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -30,39 +30,15 @@
     <select />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hsiaoweiyun/currency/waitnotify/Storage.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hsiaoweiyun/currency/condition/Storage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="57" column="60" selection-start-line="57" selection-start-column="60" selection-end-line="57" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#405#406#0" expanded="true" />
-                <element signature="e#435#436#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hsiaoweiyun/currency/waitnotify/DateComsumer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="42" lean-forward="true" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hsiaoweiyun/currency/waitnotify/DateProvider.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" column="41" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="41" />
+            <state relative-caret-position="192">
+              <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -127,7 +103,11 @@
         <option value="$PROJECT_DIR$/src/test/java/com/hsiaoweiyun/java8/ReactorTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hsiaoweiyun/currency/waitnotify/DateComsumer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hsiaoweiyun/currency/waitnotify/DateProvider.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hsiaoweiyun/currency/waitnotify/condition/Storage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hsiaoweiyun/currency/condition/DateProvider.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hsiaoweiyun/currency/condition/DateComsumer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hsiaoweiyun/currency/waitnotify/Storage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hsiaoweiyun/currency/condition/Storage.java" />
       </list>
     </option>
   </component>
@@ -166,6 +146,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -206,13 +187,41 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="hsiaoweiyun" type="462c0819:PsiDirectoryNode" />
-              <item name="java8" type="462c0819:PsiDirectoryNode" />
+              <item name="currency" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hsiaoweiyun" type="462c0819:PsiDirectoryNode" />
+              <item name="currency" type="462c0819:PsiDirectoryNode" />
+              <item name="condition" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hsiaoweiyun" type="462c0819:PsiDirectoryNode" />
+              <item name="currency" type="462c0819:PsiDirectoryNode" />
+              <item name="waitnotify" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hsiaoweiyun" type="462c0819:PsiDirectoryNode" />
+              <item name="command" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -221,7 +230,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562914570184" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/hsiaoweiyun/currency" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/hsiaoweiyun/currency/condition" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -234,6 +244,9 @@
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.hsiaoweiyun.hash" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/hsiaoweiyun/currency/condition" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -248,11 +261,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Storage">
+  <component name="RunManager" selected="Application.Storage (1)">
     <configuration default="true" type="Applet">
       <option name="HEIGHT" value="0" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <option name="WIDTH" value="0" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Storage (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hsiaoweiyun.currency.condition.Storage" />
+      <module name="JavaDemo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hsiaoweiyun.currency.condition.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -311,23 +338,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NormalHashClusterTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaDemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hsiaoweiyun.hash.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.hsiaoweiyun.hash.normal" />
-      <option name="MAIN_CLASS_NAME" value="com.hsiaoweiyun.hash.normal.NormalHashClusterTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ReactorTest.testMonoJust" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaDemo" />
       <extension name="coverage">
@@ -371,19 +381,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.NormalHashClusterTest.test" />
+      <item itemvalue="Application.Storage" />
       <item itemvalue="JUnit.ConsistencyHashClusterTest.test" />
       <item itemvalue="JUnit.DefaultTest.test" />
       <item itemvalue="JUnit.ReactorTest.testMonoJust" />
-      <item itemvalue="Application.Storage" />
+      <item itemvalue="Application.Storage (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Storage (1)" />
         <item itemvalue="Application.Storage" />
         <item itemvalue="JUnit.ReactorTest.testMonoJust" />
         <item itemvalue="JUnit.DefaultTest.test" />
         <item itemvalue="JUnit.ConsistencyHashClusterTest.test" />
-        <item itemvalue="JUnit.NormalHashClusterTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -420,7 +430,8 @@
       <workItem from="1561014573285" duration="700000" />
       <workItem from="1562645589017" duration="700000" />
       <workItem from="1562914148583" duration="418000" />
-      <workItem from="1566042054694" duration="2591000" />
+      <workItem from="1566042054694" duration="4153000" />
+      <workItem from="1566112434950" duration="1891000" />
     </task>
     <task id="LOCAL-00001" summary="add normal hash and consistency hash sample">
       <created>1546346156555</created>
@@ -465,13 +476,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61867000" />
+    <option name="totallyTimeSpent" value="65320000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1920" height="1018" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20553781" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20766774" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -587,19 +598,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="57">
-            <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/Objects.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/function/BiConsumer.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/function/BinaryOperator.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/function/BooleanSupplier.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/System.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/String.java" />
@@ -716,14 +714,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///usr/lib/jdk/jdk1.8.0_151/src.zip!/java/util/concurrent/CountDownLatch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="160" column="72" lean-forward="true" selection-start-line="160" selection-start-column="72" selection-end-line="160" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsiaoweiyun/currency/condition/DateProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsiaoweiyun/currency/condition/DateComsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hsiaoweiyun/currency/waitnotify/Storage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="57" column="60" selection-start-line="57" selection-start-column="60" selection-end-line="57" selection-end-column="60" />
+        <state relative-caret-position="325">
+          <caret line="68" column="32" lean-forward="true" selection-start-line="68" selection-start-column="32" selection-end-line="68" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#405#406#0" expanded="true" />
             <element signature="e#435#436#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsiaoweiyun/currency/condition/Storage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
