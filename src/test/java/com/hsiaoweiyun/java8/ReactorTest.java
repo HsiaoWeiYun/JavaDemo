@@ -11,6 +11,7 @@ import reactor.core.publisher.SignalType;
 import reactor.core.scheduler.Scheduler;
 import reactor.core.scheduler.Schedulers;
 
+import java.time.Duration;
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.Executor;
@@ -268,7 +269,39 @@ public class ReactorTest {
         t.join();
     }
 
+    @Test
+    public void testSchedulers() throws InterruptedException {
+        Flux<Integer> nums1 = Flux.range(0, 10).delayElements(Duration.ofMillis(100))
+                .map(num->{
+                    System.out.println("map thread : " + Thread.currentThread().getName());
+                    return num*10;
+                }).map(num->{
+                    System.out.println("map2 thread : " + Thread.currentThread().getName());
+                    return num*10;
+                });
+
+        //上游全部thread會與訂閱指定的thread相同
+        nums1 = nums1.subscribeOn(Schedulers.parallel(), false);
+        nums1.subscribe(num->{System.out.println("subscribe thread : " + Thread.currentThread().getName());});
+
+
+        Thread.sleep(1100L);
+        System.out.println("============================================");
+
+        //使用delayXXX之後的操作會使用 Schedulers.parallel()
+        Flux<Integer> nums2 = Flux.range(0, 10).delayElements(Duration.ofMillis(100))
+                .doOnNext(num->{System.out.println("before publishOn : "+ Thread.currentThread().getName());})
+                .publishOn(Schedulers.elastic())  //publishOn 後面幾個操作都會使用指定thread pool
+                .doOnNext(num->{System.out.println("after publishOn : "+ Thread.currentThread().getName());});
+
+        nums2.subscribe(num->{System.out.println("subscribe thread : " + Thread.currentThread().getName());});
+
+        Thread.sleep(1100L);
+
+    }
+
 }
+
 
 
 class DataProcessor {

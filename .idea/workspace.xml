@@ -102,7 +102,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ReactorTest.testThread">
+  <component name="RunManager" selected="JUnit.ReactorTest.testScheduler">
     <configuration default="true" type="Applet">
       <option name="HEIGHT" value="0" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
@@ -168,7 +168,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReactorTest.testSynchronousGenerate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReactorTest.testScheduler" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaDemo" />
       <extension name="coverage">
         <pattern>
@@ -178,7 +178,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.hsiaoweiyun.java8" />
       <option name="MAIN_CLASS_NAME" value="com.hsiaoweiyun.java8.ReactorTest" />
-      <option name="METHOD_NAME" value="testSynchronousGenerate" />
+      <option name="METHOD_NAME" value="testScheduler" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -228,19 +228,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ReactorTest.testSynchronousGenerate" />
       <item itemvalue="JUnit.ReactorTest.testAsynchronousCreate" />
       <item itemvalue="JUnit.ReactorTest.testAsynchronousButSingleThreadPush" />
       <item itemvalue="JUnit.ReactorTest.testHandle" />
       <item itemvalue="JUnit.ReactorTest.testThread" />
+      <item itemvalue="JUnit.ReactorTest.testScheduler" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReactorTest.testScheduler" />
         <item itemvalue="JUnit.ReactorTest.testThread" />
         <item itemvalue="JUnit.ReactorTest.testHandle" />
         <item itemvalue="JUnit.ReactorTest.testAsynchronousCreate" />
         <item itemvalue="JUnit.ReactorTest.testAsynchronousButSingleThreadPush" />
-        <item itemvalue="JUnit.ReactorTest.testSynchronousGenerate" />
       </list>
     </recent_temporary>
   </component>
@@ -296,7 +296,7 @@
       <workItem from="1570344545349" duration="1797000" />
       <workItem from="1570675667523" duration="10265000" />
       <workItem from="1570769116782" duration="10361000" />
-      <workItem from="1570795065349" duration="93000" />
+      <workItem from="1570795065349" duration="4075000" />
     </task>
     <task id="LOCAL-00001" summary="add normal hash and consistency hash sample">
       <created>1546346156555</created>
