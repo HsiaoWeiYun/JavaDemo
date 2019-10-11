@@ -251,7 +251,7 @@ public class ReactorTest {
     }
 
     @Test
-    public void testSchedulers() throws InterruptedException {
+    public void testThreads() throws InterruptedException {
 
         //由mono or flux 產生出來的資料並不代表會用不同thread執行, 大多數操作都會用跟上游一樣的thread做事,
         //除非指定, 最上游 (source) 會使用跟subscribe相同的thread 做事情
