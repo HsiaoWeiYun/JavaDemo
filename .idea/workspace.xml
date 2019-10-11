@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58d9d153-fd44-40a8-8db7-ebb3534e8c47" name="Default" comment="add CyclicBarrier sample">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hsiaoweiyun/currency/cyclicbarrier/Task1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hsiaoweiyun/currency/cyclicbarrier/TaskRunner1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_2_10_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_3_0_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDemo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDemo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/hsiaoweiyun/java8/ReactorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hsiaoweiyun/java8/ReactorTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +56,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="/usr/local/Cellar/maven/3.6.1/libexec" />
+        <option name="mavenHome" value="/usr/local/Cellar/maven/3.6.2/libexec" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -78,7 +81,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -103,53 +106,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.ReactorTest.testThread">
     <configuration default="true" type="Applet">
       <option name="HEIGHT" value="0" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <option name="WIDTH" value="0" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Storage (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.hsiaoweiyun.currency.condition.Storage" />
-      <module name="JavaDemo" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hsiaoweiyun.currency.condition.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Storage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.hsiaoweiyun.currency.waitnotify.Storage" />
-      <module name="JavaDemo" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hsiaoweiyun.currency.waitnotify.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TaskRunner1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.hsiaoweiyun.currency.cyclicbarrier.TaskRunner1" />
-      <module name="JavaDemo" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hsiaoweiyun.currency.cyclicbarrier.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -160,7 +121,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LambdaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReactorTest.testAsynchronousButSingleThreadPush" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaDemo" />
       <extension name="coverage">
         <pattern>
@@ -169,14 +130,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.hsiaoweiyun.java8" />
-      <option name="MAIN_CLASS_NAME" value="com.hsiaoweiyun.java8.LambdaTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="com.hsiaoweiyun.java8.ReactorTest" />
+      <option name="METHOD_NAME" value="testAsynchronousButSingleThreadPush" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LambdaTest.testParallelStream" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReactorTest.testAsynchronousCreate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaDemo" />
       <extension name="coverage">
         <pattern>
@@ -185,8 +147,59 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.hsiaoweiyun.java8" />
-      <option name="MAIN_CLASS_NAME" value="com.hsiaoweiyun.java8.LambdaTest" />
-      <option name="METHOD_NAME" value="testParallelStream" />
+      <option name="MAIN_CLASS_NAME" value="com.hsiaoweiyun.java8.ReactorTest" />
+      <option name="METHOD_NAME" value="testAsynchronousCreate" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReactorTest.testHandle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hsiaoweiyun.java8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hsiaoweiyun.java8" />
+      <option name="MAIN_CLASS_NAME" value="com.hsiaoweiyun.java8.ReactorTest" />
+      <option name="METHOD_NAME" value="testHandle" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReactorTest.testSynchronousGenerate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hsiaoweiyun.java8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hsiaoweiyun.java8" />
+      <option name="MAIN_CLASS_NAME" value="com.hsiaoweiyun.java8.ReactorTest" />
+      <option name="METHOD_NAME" value="testSynchronousGenerate" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReactorTest.testThread" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hsiaoweiyun.java8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hsiaoweiyun.java8" />
+      <option name="MAIN_CLASS_NAME" value="com.hsiaoweiyun.java8.ReactorTest" />
+      <option name="METHOD_NAME" value="testThread" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -219,19 +232,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Storage" />
-      <item itemvalue="Application.Storage (1)" />
-      <item itemvalue="JUnit.LambdaTest" />
-      <item itemvalue="JUnit.LambdaTest.testParallelStream" />
-      <item itemvalue="Application.TaskRunner1" />
+      <item itemvalue="JUnit.ReactorTest.testSynchronousGenerate" />
+      <item itemvalue="JUnit.ReactorTest.testAsynchronousCreate" />
+      <item itemvalue="JUnit.ReactorTest.testAsynchronousButSingleThreadPush" />
+      <item itemvalue="JUnit.ReactorTest.testHandle" />
+      <item itemvalue="JUnit.ReactorTest.testThread" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TaskRunner1" />
-        <item itemvalue="JUnit.LambdaTest.testParallelStream" />
-        <item itemvalue="JUnit.LambdaTest" />
-        <item itemvalue="Application.Storage (1)" />
-        <item itemvalue="Application.Storage" />
+        <item itemvalue="JUnit.ReactorTest.testThread" />
+        <item itemvalue="JUnit.ReactorTest.testHandle" />
+        <item itemvalue="JUnit.ReactorTest.testAsynchronousCreate" />
+        <item itemvalue="JUnit.ReactorTest.testAsynchronousButSingleThreadPush" />
+        <item itemvalue="JUnit.ReactorTest.testSynchronousGenerate" />
       </list>
     </recent_temporary>
   </component>
@@ -283,6 +296,10 @@
       <workItem from="1566924548139" duration="391000" />
       <workItem from="1566925268764" duration="43000" />
       <workItem from="1567244055988" duration="2880000" />
+      <workItem from="1570333508243" duration="733000" />
+      <workItem from="1570344545349" duration="1797000" />
+      <workItem from="1570675667523" duration="10265000" />
+      <workItem from="1570769116782" duration="9637000" />
     </task>
     <task id="LOCAL-00001" summary="add normal hash and consistency hash sample">
       <created>1546346156555</created>
