@@ -14,9 +14,11 @@ import reactor.core.scheduler.Schedulers;
 import java.time.Duration;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
  * @author VictorHsiao on 2019/7/12.
@@ -298,6 +300,122 @@ public class ReactorTest {
 
         Thread.sleep(1100L);
 
+    }
+
+    @Test
+    public void testErrorHandling() throws InterruptedException {
+        //1. catch and return a static default value
+        Flux<Integer> num1 = Flux.range(0, 6)
+                .map(num->doSomethingDangerous(num))
+                .onErrorReturn(-1);
+
+        num1.subscribe(num->System.out.println(num));
+
+        num1 = Flux.range(0, 6)
+                .map(num->doSomethingDangerous(num))
+                .onErrorReturn(throwable -> {
+                    return throwable instanceof RuntimeException;
+                    }, -1);
+
+        num1.subscribe(num->System.out.println(num));
+
+        //2. 發生exception時使用其他function處理
+        Flux<Integer> num2 = Flux.range(0, 6)
+                .map(num->doSomethingDangerous(num))
+                .onErrorResume(e -> getDefaultValueIfError(e));
+
+        num2.subscribe(num->System.out.println(num));
+
+        //包裝後重新拋出
+        num2 = Flux.range(0, 6)
+                .map(num->doSomethingDangerous(num))
+                .onErrorResume(e -> Flux.error(new UnsupportedOperationException("Not support")));
+
+        num2.subscribe(num->System.out.println(num), System.err::println);
+
+        //先log, 包裝後重新拋出
+        num2 = Flux.range(0, 6)
+                .map(num->doSomethingDangerous(num))
+                //doOnError 只不過是消費與產生副作用而已
+                .doOnError(throwable -> {System.err.println("error: " + throwable.getMessage());})
+                .onErrorMap(throwable -> new UnsupportedOperationException("Not support", throwable));
+
+        num2.subscribe(num->System.out.println(num), System.err::println);
+
+        //3. try catch finally
+        AtomicBoolean isDisposed = new AtomicBoolean();
+        Disposable disposableInstance = new Disposable() {
+            @Override
+            public void dispose() {
+                isDisposed.set(true);
+            }
+
+            @Override
+            public String toString() {
+                return "DISPOSABLE";
+            }
+        };
+
+        Flux<String> flux =
+                Flux.using(
+                        //資源生成
+                        () -> disposableInstance,
+                        //資源處理
+                        disposable -> Flux.just(disposable.toString()),
+                        //清理資源
+                        dispose->dispose.dispose()
+                );
+
+        flux.subscribe(result->{System.out.println(result + " "+ isDisposed.get());}, System.err::println);
+        //消費過後資源才釋放
+        System.out.println(isDisposed + " "+ isDisposed.get());
+
+        //finally
+        Flux<Integer> num3 = Flux.range(0, 6)
+                .map(num->doSomethingDangerous(num))
+                .doFinally(signalType -> {
+                    //釋放資源或者在你想要在finally做的事情
+                    if(signalType == SignalType.ON_ERROR){
+                        System.out.println("Error Happened");
+                    }else if(signalType == SignalType.CANCEL){
+                        System.out.println("Cancel Happened");
+                    }else if(signalType == SignalType.ON_COMPLETE){
+                        System.out.println("Success");
+                    }
+                });
+        num3.subscribe(num->System.out.println(num), System.err::println);
+
+        //4. 重試, 重試也是重要的錯誤處理, 但這邊的重試指的是重新訂閱, 與原來已經是不同序列
+        Flux.interval(Duration.ofMillis(250))
+                .map(input -> {
+                    if (input < 3) return "tick " + input;
+                    throw new RuntimeException("boom");
+                })
+                .retry(1)
+                .subscribe(System.out::println, System.err::println);
+
+        Thread.sleep(2100);
+
+
+    }
+
+    public Flux<Integer> getDefaultValueIfError(Throwable throwable){
+        if(throwable instanceof RuntimeException){
+            return Flux.just(-1,-1,-1);
+        }
+        return Flux.error(throwable);
+    }
+
+    public Integer doSomethingDangerous(Integer value){
+        if(Objects.isNull(value)){
+            throw new NullPointerException("value is null");
+        }
+
+        if((value % 2) != 0){
+            throw new RuntimeException("ERROR");
+        }
+
+        return value;
     }
 
 }
