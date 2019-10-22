@@ -1,24 +1,29 @@
 package com.hsiaoweiyun.java8;
 
 import org.junit.Test;
+import org.reactivestreams.Subscriber;
 import org.reactivestreams.Subscription;
 import reactor.core.Disposable;
-import reactor.core.Disposables;
 import reactor.core.publisher.BaseSubscriber;
+import reactor.core.publisher.DirectProcessor;
+import reactor.core.publisher.EmitterProcessor;
 import reactor.core.publisher.Flux;
+import reactor.core.publisher.FluxProcessor;
 import reactor.core.publisher.Mono;
 import reactor.core.publisher.SignalType;
-import reactor.core.scheduler.Scheduler;
+import reactor.core.publisher.UnicastProcessor;
 import reactor.core.scheduler.Schedulers;
+import reactor.util.concurrent.Queues;
 
 import java.time.Duration;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
-import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.stream.IntStream;
 
 /**
  * @author VictorHsiao on 2019/7/12.
@@ -416,6 +421,148 @@ public class ReactorTest {
         }
 
         return value;
+    }
+
+    /*
+     * DirectProcessor
+     * 1. 不支援背壓
+     * */
+    @Test
+    public void testDirectProcessor(){
+        DirectProcessor<Integer> directProcessor = DirectProcessor.create();
+
+        Flux<Integer> nums = directProcessor
+                .filter(num -> num % 2 == 0)
+                .map(num -> num + 1);
+
+        nums.subscribe(System.out::println);
+
+        IntStream.range(1,20)
+                .forEach(e -> {
+                    directProcessor.onNext(e);
+                });
+
+    }
+
+    @Test
+    public void testDirectProcessorBackpressure(){
+        DirectProcessor<Integer> directProcessor = DirectProcessor.create();
+
+        Flux<Integer> nums = directProcessor
+                .filter(num -> num % 2 == 0)
+                .map(num -> num + 1);
+
+        nums.subscribe(new Subscriber<Integer>() {
+            @Override
+            public void onSubscribe(Subscription subscription) {
+                subscription.request(1);
+            }
+
+            @Override
+            public void onNext(Integer integer) {
+                System.out.printf("onNext: %d\n", integer);
+            }
+
+            @Override
+            public void onError(Throwable throwable) {
+                throwable.printStackTrace();
+            }
+
+            @Override
+            public void onComplete() {
+                System.out.println("onComplete");
+            }
+        });
+
+        //如果publisher發布了n筆資料, 如過Subscriber要求<n則會拋出OverflowException
+        //Can't deliver value due to lack of requests
+
+        IntStream.range(1,20)
+                .forEach(e -> {
+                    directProcessor.onNext(e);
+                });
+
+    }
+
+    /*
+    * UnicastProcessor特點
+    * 1. 只能有一個subscriber
+    * 2. 支持背壓
+    * 3. 默認是unbound, 發布資料後若來不及消費會先緩存
+    * 4. 超過緩存大小會呼叫doOnError callback
+    * */
+    @Test
+    public void testUnicastProcessor() throws InterruptedException {
+
+        //預設是無界的(unbound), 發布資料後若來不及消費會把資料緩存下來
+        UnicastProcessor<Integer> unicastProcessor = UnicastProcessor.create(Queues.<Integer>get(8).get());
+        //UnicastProcessor<Integer> unicastProcessor = UnicastProcessor.create();
+        Flux<Integer> flux = unicastProcessor
+                .map(e -> e)
+                //若buffer滿了processor會發生錯誤
+                .doOnError(System.err::println);
+
+        IntStream.rangeClosed(1,12)
+                .forEach(e -> {
+                    System.out.printf("emit:%d\n",e);
+                    unicastProcessor.onNext(e);
+                    try {
+                        TimeUnit.SECONDS.sleep(1);
+                    } catch (InterruptedException e1) {
+                        e1.printStackTrace();
+                    }
+                });
+
+        System.out.println("begin to sleep 7 seconds");
+        TimeUnit.SECONDS.sleep(7);
+        flux.subscribe(System.out::println);
+
+        //UnicastProcessor只能有一個subscriber
+        //flux.subscribe(System.out::println);
+        TimeUnit.SECONDS.sleep(10);
+    }
+
+    /*EmitterProcessor 特點
+    * 1. 支援多個訂閱
+    * 2. 支援背壓
+    * 3. bufferSize參數, 若發布資料後還沒有訂閱, 當buffer滿時會阻塞onNext直到被消費
+    * 4. 後續訂閱者只能消費到自己訂閱當下的資料
+    * */
+    @Test
+    public void testEmitterProcessor() throws InterruptedException {
+        int bufferSize = 3;
+
+        //初始化bufferSize, 設太小的話似乎會有個預設值, 不確定是多少
+        FluxProcessor<Integer, Integer> processor = EmitterProcessor.create(bufferSize);
+        Flux<Integer> flux1 = processor.map(e -> e);
+        Flux<Integer> flux2 = processor.map(e -> e*10);
+
+        IntStream.rangeClosed(1,8).forEach(e -> {
+            System.out.printf("emit:%d\n",e);
+            //假如超過bufferSize則會阻塞
+            processor.onNext(e);
+        });
+
+        flux1.subscribe(num-> System.out.printf("flux1: %d\n", num));
+
+        IntStream.rangeClosed(9,10).forEach(e -> {
+            System.out.printf("emit:%d\n",e);
+            processor.onNext(e);
+            try {
+                TimeUnit.SECONDS.sleep(1);
+            } catch (InterruptedException e1) {
+                e1.printStackTrace();
+            }
+        });
+
+        //後面的subscriber只能消費到這個時間點之後推送的資料
+        flux2.subscribe(num-> System.out.printf("flux2: %d\n", num));
+
+        processor.onNext(11);
+        processor.onNext(12);
+
+        processor.onComplete();
+        processor.blockLast();//阻塞至最後一個元素或complete
     }
 
 }
