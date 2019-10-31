@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58d9d153-fd44-40a8-8db7-ebb3534e8c47" name="Default" comment="add CyclicBarrier sample">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/hsiaoweiyun/leetcode/TwoSum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/hsiaoweiyun/java8/ReactorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hsiaoweiyun/java8/ReactorTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,10 +32,35 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/hsiaoweiyun/java8/LambdaTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/hsiaoweiyun/java8/ReactorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="218" column="34" selection-start-line="218" selection-start-column="34" selection-end-line="218" selection-end-column="34" />
+            <state relative-caret-position="314">
+              <caret line="567" column="1" lean-forward="true" selection-start-line="567" selection-start-column="1" selection-end-line="567" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#12095#12096#0" expanded="true" />
+                <element signature="e#12147#12148#0" expanded="true" />
+                <element signature="e#12209#12210#0" expanded="true" />
+                <element signature="e#12260#12261#0" expanded="true" />
+                <element signature="e#15301#15302#0" expanded="true" />
+                <element signature="e#15356#15357#0" expanded="true" />
+                <element signature="e#15429#15430#0" expanded="true" />
+                <element signature="e#15503#15504#0" expanded="true" />
+                <element signature="e#15581#15582#0" expanded="true" />
+                <element signature="e#15640#15641#0" expanded="true" />
+                <element signature="e#15702#15703#0" expanded="true" />
+                <element signature="e#15766#15767#0" expanded="true" />
+                <element signature="e#16406#16415#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/hsiaoweiyun/leetcode/TwoSum.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="222">
+              <caret line="16" column="36" lean-forward="true" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -43,34 +68,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/hsiaoweiyun/java8/ReactorTest.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/HashMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="528" column="28" lean-forward="true" selection-start-line="528" selection-start-column="28" selection-end-line="528" selection-end-column="28" />
+            <state relative-caret-position="330">
+              <caret line="636" column="43" lean-forward="true" selection-start-line="636" selection-start-column="43" selection-end-line="636" selection-end-column="43" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#11868#11869#0" expanded="true" />
-                <element signature="e#11920#11921#0" expanded="true" />
-                <element signature="e#11982#11983#0" expanded="true" />
-                <element signature="e#12033#12034#0" expanded="true" />
-                <element signature="e#15027#15028#0" expanded="true" />
-                <element signature="e#15070#15071#0" expanded="true" />
-                <element signature="e#15155#15156#0" expanded="true" />
-                <element signature="e#15229#15230#0" expanded="true" />
-                <element signature="e#15307#15308#0" expanded="true" />
-                <element signature="e#15366#15367#0" expanded="true" />
-                <element signature="e#15430#15431#0" expanded="true" />
-                <element signature="e#15494#15495#0" expanded="true" />
-                <element signature="e#16117#16126#0" expanded="true" />
-                <element signature="e#18672#18673#0" expanded="true" />
-                <element signature="e#18726#18727#0" expanded="true" />
-                <element signature="e#18772#18773#0" expanded="true" />
-                <element signature="e#18823#18824#0" expanded="true" />
-                <element signature="e#18851#18852#0" expanded="true" />
-                <element signature="e#18900#18901#0" expanded="true" />
-                <element signature="e#18936#18937#0" expanded="true" />
-                <element signature="e#18974#18975#0" expanded="true" />
+                <element signature="e#19327#19328#0" expanded="true" />
+                <element signature="e#19410#19411#0" expanded="true" />
+                <element signature="e#24331#24332#0" expanded="true" />
+                <element signature="e#24396#24397#0" expanded="true" />
+                <element signature="e#66928#66929#0" expanded="true" />
+                <element signature="e#66985#66986#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -106,6 +115,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/test/java/com/hsiaoweiyun/java8/ReactorTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/hsiaoweiyun/leetcode/TwoSum.java" />
       </list>
     </option>
   </component>
@@ -134,6 +144,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -211,14 +222,13 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571724693050" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572511847003" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/hsiaoweiyun/currency" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -253,7 +263,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ReactorTest.testEmitterProcessor">
+  <component name="RunManager" selected="JUnit.TwoSum.testTwoSum">
     <configuration default="true" type="Applet">
       <option name="HEIGHT" value="0" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
@@ -319,23 +329,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReactorTest.testErrorHandling" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaDemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hsiaoweiyun.java8.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.hsiaoweiyun.java8" />
-      <option name="MAIN_CLASS_NAME" value="com.hsiaoweiyun.java8.ReactorTest" />
-      <option name="METHOD_NAME" value="testErrorHandling" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ReactorTest.testUnicastProcessor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaDemo" />
       <extension name="coverage">
@@ -347,6 +340,23 @@
       <option name="PACKAGE_NAME" value="com.hsiaoweiyun.java8" />
       <option name="MAIN_CLASS_NAME" value="com.hsiaoweiyun.java8.ReactorTest" />
       <option name="METHOD_NAME" value="testUnicastProcessor" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TwoSum.testTwoSum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hsiaoweiyun.leetcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hsiaoweiyun.leetcode" />
+      <option name="MAIN_CLASS_NAME" value="com.hsiaoweiyun.leetcode.TwoSum" />
+      <option name="METHOD_NAME" value="testTwoSum" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -379,19 +389,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ReactorTest.testErrorHandling" />
       <item itemvalue="JUnit.ReactorTest.testDirectProcessor" />
       <item itemvalue="JUnit.ReactorTest.testDirectProcessorBackpressure" />
       <item itemvalue="JUnit.ReactorTest.testUnicastProcessor" />
       <item itemvalue="JUnit.ReactorTest.testEmitterProcessor" />
+      <item itemvalue="JUnit.TwoSum.testTwoSum" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TwoSum.testTwoSum" />
         <item itemvalue="JUnit.ReactorTest.testEmitterProcessor" />
         <item itemvalue="JUnit.ReactorTest.testUnicastProcessor" />
         <item itemvalue="JUnit.ReactorTest.testDirectProcessorBackpressure" />
         <item itemvalue="JUnit.ReactorTest.testDirectProcessor" />
-        <item itemvalue="JUnit.ReactorTest.testErrorHandling" />
       </list>
     </recent_temporary>
   </component>
@@ -461,45 +471,45 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ReactorTest_testUnicastProcessor - 2019.10.22 at 13h 35m 48s.xml">
-      <configuration name="ReactorTest.testUnicastProcessor" configurationId="JUnit" />
+    <history-entry file="TwoSum_testTwoSum - 2019.10.31 at 16h 13m 54s.xml">
+      <configuration name="TwoSum.testTwoSum" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ReactorTest_testEmitterProcessor - 2019.10.22 at 13h 50m 41s.xml">
-      <configuration name="ReactorTest.testEmitterProcessor" configurationId="JUnit" />
+    <history-entry file="TwoSum_testTwoSum - 2019.10.31 at 16h 15m 08s.xml">
+      <configuration name="TwoSum.testTwoSum" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ReactorTest_testEmitterProcessor - 2019.10.22 at 13h 52m 33s.xml">
-      <configuration name="ReactorTest.testEmitterProcessor" configurationId="JUnit" />
+    <history-entry file="TwoSum_testTwoSum - 2019.10.31 at 16h 19m 00s.xml">
+      <configuration name="TwoSum.testTwoSum" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ReactorTest_testEmitterProcessor - 2019.10.22 at 13h 55m 07s.xml">
-      <configuration name="ReactorTest.testEmitterProcessor" configurationId="JUnit" />
+    <history-entry file="TwoSum_testTwoSum - 2019.10.31 at 16h 20m 31s.xml">
+      <configuration name="TwoSum.testTwoSum" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ReactorTest_testEmitterProcessor - 2019.10.22 at 13h 55m 26s.xml">
-      <configuration name="ReactorTest.testEmitterProcessor" configurationId="JUnit" />
+    <history-entry file="TwoSum_testTwoSum - 2019.10.31 at 16h 21m 22s.xml">
+      <configuration name="TwoSum.testTwoSum" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ReactorTest_testEmitterProcessor - 2019.10.22 at 13h 55m 50s.xml">
-      <configuration name="ReactorTest.testEmitterProcessor" configurationId="JUnit" />
+    <history-entry file="TwoSum_testTwoSum - 2019.10.31 at 16h 21m 26s.xml">
+      <configuration name="TwoSum.testTwoSum" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ReactorTest_testEmitterProcessor - 2019.10.22 at 13h 59m 56s.xml">
-      <configuration name="ReactorTest.testEmitterProcessor" configurationId="JUnit" />
+    <history-entry file="TwoSum_testTwoSum - 2019.10.31 at 16h 22m 16s.xml">
+      <configuration name="TwoSum.testTwoSum" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ReactorTest_testEmitterProcessor - 2019.10.22 at 14h 02m 55s.xml">
-      <configuration name="ReactorTest.testEmitterProcessor" configurationId="JUnit" />
+    <history-entry file="TwoSum_testTwoSum - 2019.10.31 at 16h 49m 02s.xml">
+      <configuration name="TwoSum.testTwoSum" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ReactorTest_testEmitterProcessor - 2019.10.22 at 14h 03m 52s.xml">
-      <configuration name="ReactorTest.testEmitterProcessor" configurationId="JUnit" />
+    <history-entry file="TwoSum_testTwoSum - 2019.10.31 at 16h 49m 18s.xml">
+      <configuration name="TwoSum.testTwoSum" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ReactorTest_testEmitterProcessor - 2019.10.22 at 14h 04m 01s.xml">
-      <configuration name="ReactorTest.testEmitterProcessor" configurationId="JUnit" />
+    <history-entry file="TwoSum_testTwoSum - 2019.10.31 at 16h 50m 21s.xml">
+      <configuration name="TwoSum.testTwoSum" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8026000" />
+    <option name="totallyTimeSpent" value="11003000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20788912" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21428572" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -511,15 +521,15 @@
       <window_info id="DB Browser" order="9" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32912844" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.324295" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39804772" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.324295" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39804772" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.328125" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32849163" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3275488" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="JRebel Console" order="12" side_tool="true" />
       <window_info anchor="bottom" id="JRebel Executor" order="13" />
@@ -651,6 +661,12 @@
           </properties>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/hsiaoweiyun/leetcode/TwoSum.java</url>
+          <line>57</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -679,31 +695,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/hsiaoweiyun/java8/ReactorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="528" column="28" lean-forward="true" selection-start-line="528" selection-start-column="28" selection-end-line="528" selection-end-column="28" />
+        <state relative-caret-position="314">
+          <caret line="567" column="1" lean-forward="true" selection-start-line="567" selection-start-column="1" selection-end-line="567" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#11868#11869#0" expanded="true" />
-            <element signature="e#11920#11921#0" expanded="true" />
-            <element signature="e#11982#11983#0" expanded="true" />
-            <element signature="e#12033#12034#0" expanded="true" />
-            <element signature="e#15027#15028#0" expanded="true" />
-            <element signature="e#15070#15071#0" expanded="true" />
-            <element signature="e#15155#15156#0" expanded="true" />
-            <element signature="e#15229#15230#0" expanded="true" />
-            <element signature="e#15307#15308#0" expanded="true" />
-            <element signature="e#15366#15367#0" expanded="true" />
-            <element signature="e#15430#15431#0" expanded="true" />
-            <element signature="e#15494#15495#0" expanded="true" />
-            <element signature="e#16117#16126#0" expanded="true" />
-            <element signature="e#18672#18673#0" expanded="true" />
-            <element signature="e#18726#18727#0" expanded="true" />
-            <element signature="e#18772#18773#0" expanded="true" />
-            <element signature="e#18823#18824#0" expanded="true" />
-            <element signature="e#18851#18852#0" expanded="true" />
-            <element signature="e#18900#18901#0" expanded="true" />
-            <element signature="e#18936#18937#0" expanded="true" />
-            <element signature="e#18974#18975#0" expanded="true" />
+            <element signature="e#12095#12096#0" expanded="true" />
+            <element signature="e#12147#12148#0" expanded="true" />
+            <element signature="e#12209#12210#0" expanded="true" />
+            <element signature="e#12260#12261#0" expanded="true" />
+            <element signature="e#15301#15302#0" expanded="true" />
+            <element signature="e#15356#15357#0" expanded="true" />
+            <element signature="e#15429#15430#0" expanded="true" />
+            <element signature="e#15503#15504#0" expanded="true" />
+            <element signature="e#15581#15582#0" expanded="true" />
+            <element signature="e#15640#15641#0" expanded="true" />
+            <element signature="e#15702#15703#0" expanded="true" />
+            <element signature="e#15766#15767#0" expanded="true" />
+            <element signature="e#16406#16415#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/hsiaoweiyun/leetcode/TwoSum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="16" column="36" lean-forward="true" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
