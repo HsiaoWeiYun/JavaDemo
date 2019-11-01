@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58d9d153-fd44-40a8-8db7-ebb3534e8c47" name="Default" comment="add CyclicBarrier sample">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/hsiaoweiyun/leetcode/IntReverse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/hsiaoweiyun/leetcode/PalindromeNumber.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,50 +31,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/hsiaoweiyun/java8/ReactorTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="567" column="1" lean-forward="true" selection-start-line="567" selection-start-column="1" selection-end-line="567" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#12095#12096#0" expanded="true" />
-                <element signature="e#12147#12148#0" expanded="true" />
-                <element signature="e#12209#12210#0" expanded="true" />
-                <element signature="e#12260#12261#0" expanded="true" />
-                <element signature="e#15301#15302#0" expanded="true" />
-                <element signature="e#15356#15357#0" expanded="true" />
-                <element signature="e#15429#15430#0" expanded="true" />
-                <element signature="e#15503#15504#0" expanded="true" />
-                <element signature="e#15581#15582#0" expanded="true" />
-                <element signature="e#15640#15641#0" expanded="true" />
-                <element signature="e#15702#15703#0" expanded="true" />
-                <element signature="e#15766#15767#0" expanded="true" />
-                <element signature="e#16406#16415#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/hsiaoweiyun/leetcode/TwoSum.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="22" column="33" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/hsiaoweiyun/leetcode/IntReverse.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/hsiaoweiyun/leetcode/PalindromeNumber.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="285">
+              <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#284#285#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -112,6 +76,7 @@
         <option value="$PROJECT_DIR$/src/test/java/com/hsiaoweiyun/java8/ReactorTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/hsiaoweiyun/leetcode/TwoSum.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/hsiaoweiyun/leetcode/IntReverse.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/hsiaoweiyun/leetcode/PalindromeNumber.java" />
       </list>
     </option>
   </component>
@@ -233,7 +198,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572587729353" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572590136490" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/hsiaoweiyun/currency" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -268,7 +233,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.IntReverse.testReverse">
+  <component name="RunManager" selected="JUnit.PalindromeNumber.testPalindrome">
     <configuration default="true" type="Applet">
       <option name="HEIGHT" value="0" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
@@ -300,17 +265,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReactorTest.testDirectProcessorBackpressure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PalindromeNumber.testPalindrome" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaDemo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hsiaoweiyun.java8.*" />
+          <option name="PATTERN" value="com.hsiaoweiyun.leetcode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.hsiaoweiyun.java8" />
-      <option name="MAIN_CLASS_NAME" value="com.hsiaoweiyun.java8.ReactorTest" />
-      <option name="METHOD_NAME" value="testDirectProcessorBackpressure" />
+      <option name="PACKAGE_NAME" value="com.hsiaoweiyun.leetcode" />
+      <option name="MAIN_CLASS_NAME" value="com.hsiaoweiyun.leetcode.PalindromeNumber" />
+      <option name="METHOD_NAME" value="testPalindrome" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -394,19 +359,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ReactorTest.testDirectProcessorBackpressure" />
       <item itemvalue="JUnit.ReactorTest.testUnicastProcessor" />
       <item itemvalue="JUnit.ReactorTest.testEmitterProcessor" />
       <item itemvalue="JUnit.TwoSum.testTwoSum" />
       <item itemvalue="JUnit.IntReverse.testReverse" />
+      <item itemvalue="JUnit.PalindromeNumber.testPalindrome" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PalindromeNumber.testPalindrome" />
         <item itemvalue="JUnit.IntReverse.testReverse" />
         <item itemvalue="JUnit.TwoSum.testTwoSum" />
         <item itemvalue="JUnit.ReactorTest.testEmitterProcessor" />
         <item itemvalue="JUnit.ReactorTest.testUnicastProcessor" />
-        <item itemvalue="JUnit.ReactorTest.testDirectProcessorBackpressure" />
       </list>
     </recent_temporary>
   </component>
@@ -476,39 +441,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="IntReverse_testReverse - 2019.11.01 at 11h 34m 14s.xml">
-      <configuration name="IntReverse.testReverse" configurationId="JUnit" />
+    <history-entry file="PalindromeNumber_testPalindrome - 2019.11.01 at 14h 22m 33s.xml">
+      <configuration name="PalindromeNumber.testPalindrome" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IntReverse_testReverse - 2019.11.01 at 11h 40m 31s.xml">
-      <configuration name="IntReverse.testReverse" configurationId="JUnit" />
+    <history-entry file="PalindromeNumber_testPalindrome - 2019.11.01 at 14h 22m 42s.xml">
+      <configuration name="PalindromeNumber.testPalindrome" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IntReverse_testReverse - 2019.11.01 at 11h 49m 29s.xml">
-      <configuration name="IntReverse.testReverse" configurationId="JUnit" />
+    <history-entry file="PalindromeNumber_testPalindrome - 2019.11.01 at 14h 23m 08s.xml">
+      <configuration name="PalindromeNumber.testPalindrome" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IntReverse_testReverse - 2019.11.01 at 11h 52m 46s.xml">
-      <configuration name="IntReverse.testReverse" configurationId="JUnit" />
+    <history-entry file="PalindromeNumber_testPalindrome - 2019.11.01 at 14h 24m 09s.xml">
+      <configuration name="PalindromeNumber.testPalindrome" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IntReverse_testReverse - 2019.11.01 at 11h 53m 42s.xml">
-      <configuration name="IntReverse.testReverse" configurationId="JUnit" />
+    <history-entry file="PalindromeNumber_testPalindrome - 2019.11.01 at 14h 25m 30s.xml">
+      <configuration name="PalindromeNumber.testPalindrome" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IntReverse_testReverse - 2019.11.01 at 12h 03m 15s.xml">
-      <configuration name="IntReverse.testReverse" configurationId="JUnit" />
+    <history-entry file="PalindromeNumber_testPalindrome - 2019.11.01 at 14h 26m 48s.xml">
+      <configuration name="PalindromeNumber.testPalindrome" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IntReverse_testReverse - 2019.11.01 at 13h 32m 46s.xml">
-      <configuration name="IntReverse.testReverse" configurationId="JUnit" />
+    <history-entry file="PalindromeNumber_testPalindrome - 2019.11.01 at 14h 27m 29s.xml">
+      <configuration name="PalindromeNumber.testPalindrome" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IntReverse_testReverse - 2019.11.01 at 13h 32m 52s.xml">
-      <configuration name="IntReverse.testReverse" configurationId="JUnit" />
+    <history-entry file="PalindromeNumber_testPalindrome - 2019.11.01 at 14h 28m 37s.xml">
+      <configuration name="PalindromeNumber.testPalindrome" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IntReverse_testReverse - 2019.11.01 at 13h 33m 30s.xml">
-      <configuration name="IntReverse.testReverse" configurationId="JUnit" />
+    <history-entry file="PalindromeNumber_testPalindrome - 2019.11.01 at 14h 29m 07s.xml">
+      <configuration name="PalindromeNumber.testPalindrome" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IntReverse_testReverse - 2019.11.01 at 13h 33m 54s.xml">
-      <configuration name="IntReverse.testReverse" configurationId="JUnit" />
+    <history-entry file="PalindromeNumber_testPalindrome - 2019.11.01 at 14h 34m 00s.xml">
+      <configuration name="PalindromeNumber.testPalindrome" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21397000" />
+    <option name="totallyTimeSpent" value="23308000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -782,10 +747,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/hsiaoweiyun/leetcode/IntReverse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="414">
+          <caret line="23" column="12" lean-forward="true" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/hsiaoweiyun/leetcode/PalindromeNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#284#285#0" expanded="true" />
           </folding>
         </state>
       </provider>
