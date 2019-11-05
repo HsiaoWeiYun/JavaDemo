@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="58d9d153-fd44-40a8-8db7-ebb3534e8c47" name="Default" comment="add CyclicBarrier sample">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/hsiaoweiyun/leetcode/LongestCommonPrefix.java" afterDir="false" />
+    <list default="true" id="58d9d153-fd44-40a8-8db7-ebb3534e8c47" name="Default" comment="LongestCommonPrefix">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/hsiaoweiyun/leetcode/ValidParentheses.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -43,11 +43,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/hsiaoweiyun/leetcode/LongestCommonPrefix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="19" column="76" selection-start-line="19" selection-start-column="76" selection-end-line="19" selection-end-column="76" />
+            <state relative-caret-position="220">
+              <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/hsiaoweiyun/leetcode/ValidParentheses.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="163">
+              <caret line="30" column="48" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,6 +114,7 @@
         <option value="$PROJECT_DIR$/src/test/java/com/hsiaoweiyun/leetcode/PalindromeNumber.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/hsiaoweiyun/leetcode/RomanToInt.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/hsiaoweiyun/leetcode/LongestCommonPrefix.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/hsiaoweiyun/leetcode/ValidParentheses.java" />
       </list>
     </option>
   </component>
@@ -223,7 +236,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572844116206" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572921932970" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/hsiaoweiyun/currency" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../git/award-number-core" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -258,7 +271,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LongestCommonPrefix.test">
+  <component name="RunManager" selected="JUnit.ValidParentheses.test">
     <configuration default="true" type="Applet">
       <option name="HEIGHT" value="0" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
@@ -341,7 +354,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TwoSum.testTwoSum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ValidParentheses.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaDemo" />
       <extension name="coverage">
         <pattern>
@@ -350,8 +363,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.hsiaoweiyun.leetcode" />
-      <option name="MAIN_CLASS_NAME" value="com.hsiaoweiyun.leetcode.TwoSum" />
-      <option name="METHOD_NAME" value="testTwoSum" />
+      <option name="MAIN_CLASS_NAME" value="com.hsiaoweiyun.leetcode.ValidParentheses" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -384,19 +397,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.TwoSum.testTwoSum" />
       <item itemvalue="JUnit.IntReverse.testReverse" />
       <item itemvalue="JUnit.PalindromeNumber.testPalindrome" />
       <item itemvalue="JUnit.RomanToInt.test" />
       <item itemvalue="JUnit.LongestCommonPrefix.test" />
+      <item itemvalue="JUnit.ValidParentheses.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ValidParentheses.test" />
         <item itemvalue="JUnit.LongestCommonPrefix.test" />
         <item itemvalue="JUnit.RomanToInt.test" />
         <item itemvalue="JUnit.PalindromeNumber.testPalindrome" />
         <item itemvalue="JUnit.IntReverse.testReverse" />
-        <item itemvalue="JUnit.TwoSum.testTwoSum" />
       </list>
     </recent_temporary>
   </component>
@@ -454,7 +467,7 @@
       <workItem from="1570769116782" duration="10361000" />
       <workItem from="1570795065349" duration="4117000" />
       <workItem from="1570857579753" duration="6671000" />
-      <workItem from="1572834044388" duration="7363000" />
+      <workItem from="1572834044388" duration="10313000" />
     </task>
     <task id="LOCAL-00001" summary="add normal hash and consistency hash sample">
       <created>1546346156555</created>
@@ -463,43 +476,50 @@
       <option name="project" value="LOCAL" />
       <updated>1546346156556</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="LongestCommonPrefix">
+      <created>1572844128636</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1572844128636</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LongestCommonPrefix_test - 2019.11.04 at 12h 09m 54s.xml">
-      <configuration name="LongestCommonPrefix.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LongestCommonPrefix_test - 2019.11.04 at 12h 09m 57s.xml">
-      <configuration name="LongestCommonPrefix.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LongestCommonPrefix_test - 2019.11.04 at 12h 10m 26s.xml">
-      <configuration name="LongestCommonPrefix.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LongestCommonPrefix_test - 2019.11.04 at 12h 54m 02s.xml">
-      <configuration name="LongestCommonPrefix.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LongestCommonPrefix_test - 2019.11.04 at 12h 54m 13s.xml">
-      <configuration name="LongestCommonPrefix.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LongestCommonPrefix_test - 2019.11.04 at 12h 57m 19s.xml">
-      <configuration name="LongestCommonPrefix.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LongestCommonPrefix_test - 2019.11.04 at 12h 57m 20s.xml">
-      <configuration name="LongestCommonPrefix.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LongestCommonPrefix_test - 2019.11.04 at 12h 59m 42s.xml">
-      <configuration name="LongestCommonPrefix.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LongestCommonPrefix_test - 2019.11.04 at 13h 00m 21s.xml">
-      <configuration name="LongestCommonPrefix.test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="LongestCommonPrefix_test - 2019.11.04 at 13h 06m 05s.xml">
       <configuration name="LongestCommonPrefix.test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ValidParentheses_test - 2019.11.05 at 10h 31m 36s.xml">
+      <configuration name="ValidParentheses.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ValidParentheses_test - 2019.11.05 at 10h 32m 05s.xml">
+      <configuration name="ValidParentheses.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ValidParentheses_test - 2019.11.05 at 10h 33m 10s.xml">
+      <configuration name="ValidParentheses.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ValidParentheses_test - 2019.11.05 at 10h 33m 30s.xml">
+      <configuration name="ValidParentheses.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ValidParentheses_test - 2019.11.05 at 10h 33m 45s.xml">
+      <configuration name="ValidParentheses.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ValidParentheses_test - 2019.11.05 at 10h 33m 57s.xml">
+      <configuration name="ValidParentheses.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ValidParentheses_test - 2019.11.05 at 10h 34m 08s.xml">
+      <configuration name="ValidParentheses.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ValidParentheses_test - 2019.11.05 at 10h 34m 19s.xml">
+      <configuration name="ValidParentheses.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ValidParentheses_test - 2019.11.05 at 10h 35m 37s.xml">
+      <configuration name="ValidParentheses.test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31622000" />
+    <option name="totallyTimeSpent" value="34572000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -612,7 +632,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add normal hash and consistency hash sample" />
     <MESSAGE value="add CyclicBarrier sample" />
-    <option name="LAST_COMMIT_MESSAGE" value="add CyclicBarrier sample" />
+    <MESSAGE value="LongestCommonPrefix" />
+    <option name="LAST_COMMIT_MESSAGE" value="LongestCommonPrefix" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -789,16 +810,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/hsiaoweiyun/leetcode/TwoSum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="22" column="8" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/hsiaoweiyun/leetcode/RomanToInt.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -822,8 +833,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/hsiaoweiyun/leetcode/LongestCommonPrefix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="19" column="76" selection-start-line="19" selection-start-column="76" selection-end-line="19" selection-end-column="76" />
+        <state relative-caret-position="220">
+          <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/hsiaoweiyun/leetcode/TwoSum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="22" column="8" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/hsiaoweiyun/leetcode/ValidParentheses.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="30" column="48" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
