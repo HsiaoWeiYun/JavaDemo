@@ -8,15 +8,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58d9d153-fd44-40a8-8db7-ebb3534e8c47" name="Default" comment="LongestCommonPrefix">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/qaplug_profiles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hsiaoweiyun/leetcode/Roman2Integer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hsiaoweiyun/leetcode/LongestCommonPrefix.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDemo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDemo.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -268,7 +261,7 @@
       <recent name="com.hsiaoweiyun.currency.cyclicbarrier" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Roman2Integer">
+  <component name="RunManager" selected="Application.LongestCommonPrefix">
     <configuration default="true" type="Applet">
       <option name="HEIGHT" value="0" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
@@ -277,8 +270,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Roman2Integer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.hsiaoweiyun.leetcode.Roman2Integer" />
+    <configuration name="LongestCommonPrefix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hsiaoweiyun.leetcode.LongestCommonPrefix" />
       <module name="JavaDemo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -291,13 +284,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.hsiaoweiyun.designpatterns.simplefactory.Test" />
+    <configuration name="Roman2Integer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hsiaoweiyun.leetcode.Roman2Integer" />
       <module name="JavaDemo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hsiaoweiyun.designpatterns.simplefactory.*" />
+          <option name="PATTERN" value="com.hsiaoweiyun.leetcode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -382,19 +375,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.LongestCommonPrefix" />
       <item itemvalue="Application.Roman2Integer" />
-      <item itemvalue="Application.Test (4)" />
       <item itemvalue="Application.Test (5)" />
       <item itemvalue="Application.Test" />
       <item itemvalue="JUnit.CommandTest.commandPatternTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LongestCommonPrefix" />
         <item itemvalue="Application.Roman2Integer" />
         <item itemvalue="JUnit.CommandTest.commandPatternTest" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.Test (5)" />
-        <item itemvalue="Application.Test (4)" />
       </list>
     </recent_temporary>
   </component>
@@ -461,7 +454,11 @@
       <workItem from="1574061463192" duration="8273000" />
       <workItem from="1691574541347" duration="1246000" />
       <workItem from="1691582870333" duration="1734000" />
-      <workItem from="1692092170705" duration="3629000" />
+      <workItem from="1692092170705" duration="3675000" />
+      <workItem from="1692164337662" duration="4000" />
+      <workItem from="1692697388989" duration="321000" />
+      <workItem from="1692698284935" duration="2988000" />
+      <workItem from="1692869735696" duration="6531000" />
     </task>
     <task id="LOCAL-00001" summary="add normal hash and consistency hash sample">
       <created>1546346156555</created>
@@ -697,6 +694,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/hsiaoweiyun/designpatterns/decorator/Mocha.java</url>
           <line>22</line>
           <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hsiaoweiyun/leetcode/LongestCommonPrefix.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="52" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
