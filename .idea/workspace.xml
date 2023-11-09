@@ -8,9 +8,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58d9d153-fd44-40a8-8db7-ebb3534e8c47" name="Default" comment="LongestCommonPrefix">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hsiaoweiyun/designpatterns/builder/NyPizza.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hsiaoweiyun/designpatterns/builder/Pizza.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hsiaoweiyun/designpatterns/builder/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hsiaoweiyun/designpatterns/A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hsiaoweiyun/designpatterns/B.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -264,7 +263,7 @@
       <recent name="com.hsiaoweiyun.currency.cyclicbarrier" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.com.hsiaoweiyun.designpatterns.builder.Test">
+  <component name="RunManager" selected="Application.A">
     <configuration default="true" type="Applet">
       <option name="HEIGHT" value="0" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
@@ -273,13 +272,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LongestCommonPrefix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.hsiaoweiyun.leetcode.LongestCommonPrefix" />
+    <configuration name="A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hsiaoweiyun.compare.A" />
       <module name="JavaDemo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hsiaoweiyun.leetcode.*" />
+          <option name="PATTERN" value="com.hsiaoweiyun.compare.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -287,8 +286,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Roman2Integer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.hsiaoweiyun.leetcode.Roman2Integer" />
+    <configuration name="B" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hsiaoweiyun.compare.B" />
+      <module name="JavaDemo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hsiaoweiyun.compare.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LongestCommonPrefix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hsiaoweiyun.leetcode.LongestCommonPrefix" />
       <module name="JavaDemo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -335,23 +348,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CommandTest.commandPatternTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaDemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hsiaoweiyun.designpatterns.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.hsiaoweiyun.designpatterns" />
-      <option name="MAIN_CLASS_NAME" value="com.hsiaoweiyun.designpatterns.CommandTest" />
-      <option name="METHOD_NAME" value="commandPatternTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -378,19 +374,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.A" />
+      <item itemvalue="Application.B" />
       <item itemvalue="Application.com.hsiaoweiyun.designpatterns.builder.Test" />
       <item itemvalue="Application.ValidParentheses" />
       <item itemvalue="Application.LongestCommonPrefix" />
-      <item itemvalue="Application.Roman2Integer" />
-      <item itemvalue="JUnit.CommandTest.commandPatternTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.A" />
+        <item itemvalue="Application.B" />
         <item itemvalue="Application.com.hsiaoweiyun.designpatterns.builder.Test" />
         <item itemvalue="Application.ValidParentheses" />
         <item itemvalue="Application.LongestCommonPrefix" />
-        <item itemvalue="Application.Roman2Integer" />
-        <item itemvalue="JUnit.CommandTest.commandPatternTest" />
       </list>
     </recent_temporary>
   </component>
@@ -466,6 +462,8 @@
       <workItem from="1693277260091" duration="3000" />
       <workItem from="1693991555126" duration="2278000" />
       <workItem from="1694054210286" duration="3897000" />
+      <workItem from="1697765936644" duration="5000" />
+      <workItem from="1699533393365" duration="3331000" />
     </task>
     <task id="LOCAL-00001" summary="add normal hash and consistency hash sample">
       <created>1546346156555</created>
