@@ -10,8 +10,5 @@
         <module name="JavaDemo" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="JavaDemo" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
